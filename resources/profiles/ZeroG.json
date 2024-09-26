@@ -1,0 +1,182 @@
+{
+    "name": "ZeroG",
+    "version": "01.04.04.00",
+    "force_update": "0",
+    "description": "ZeroG configurations",
+    "machine_model_list": [
+        {
+            "name": "ZeroG Hydra 255",
+            "sub_path": "machine/ZeroG Hydra 255.json"
+        },
+        {
+            "name": "ZeroG Hydra 275",
+            "sub_path": "machine/ZeroG Hydra 275.json"
+        },
+        {
+            "name": "ZeroG Hydra 370",
+            "sub_path": "machine/ZeroG Hydra 370.json"
+        },
+        {
+            "name": "ZeroG Hydra 410",
+            "sub_path": "machine/ZeroG Hydra 410.json"
+        },
+        {
+            "name": "ZeroG Mercury 235",
+            "sub_path": "machine/ZeroG Mercury 235.json"
+        },
+        {
+            "name": "ZeroG Mercury 370",
+            "sub_path": "machine/ZeroG Mercury 370.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "process/fdm_process_common.json"
+        },
+        {
+            "name": "fdm_process_ZeroG_common",
+            "sub_path": "process/fdm_process_ZeroG_common.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @ZeroG",
+            "sub_path": "process/0.08mm Extra Fine @ZeroG.json"
+        },
+        {
+            "name": "0.12mm Fine @ZeroG",
+            "sub_path": "process/0.12mm Fine @ZeroG.json"
+        },
+        {
+            "name": "0.15mm Optimal @ZeroG",
+            "sub_path": "process/0.15mm Optimal @ZeroG.json"
+        },
+        {
+            "name": "0.20mm Standard @ZeroG",
+            "sub_path": "process/0.20mm Standard @ZeroG.json"
+        },
+        {
+            "name": "0.24mm Draft @ZeroG",
+            "sub_path": "process/0.24mm Draft @ZeroG.json"
+        },
+        {
+            "name": "0.28mm Extra Draft @ZeroG",
+            "sub_path": "process/0.28mm Extra Draft @ZeroG.json"
+        },
+        {
+            "name": "Mercury Base Profile 0.4 nozzle",
+            "sub_path": "process/Mercury Base Profile 0.4 nozzle.json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "fdm_filament_common",
+            "sub_path": "filament/fdm_filament_common.json"
+        },
+        {
+            "name": "fdm_filament_pla",
+            "sub_path": "filament/fdm_filament_pla.json"
+        },
+        {
+            "name": "fdm_filament_tpu",
+            "sub_path": "filament/fdm_filament_tpu.json"
+        },
+        {
+            "name": "fdm_filament_pet",
+            "sub_path": "filament/fdm_filament_pet.json"
+        },
+        {
+            "name": "fdm_filament_abs",
+            "sub_path": "filament/fdm_filament_abs.json"
+        },
+        {
+            "name": "fdm_filament_pc",
+            "sub_path": "filament/fdm_filament_pc.json"
+        },
+        {
+            "name": "fdm_filament_asa",
+            "sub_path": "filament/fdm_filament_asa.json"
+        },
+        {
+            "name": "fdm_filament_pva",
+            "sub_path": "filament/fdm_filament_pva.json"
+        },
+        {
+            "name": "fdm_filament_pa",
+            "sub_path": "filament/fdm_filament_pa.json"
+        },
+        {
+            "name": "ZeroG Generic PLA",
+            "sub_path": "filament/ZeroG Generic PLA.json"
+        },
+        {
+            "name": "ZeroG Generic PLA-CF",
+            "sub_path": "filament/ZeroG Generic PLA-CF.json"
+        },
+        {
+            "name": "ZeroG Generic PETG",
+            "sub_path": "filament/ZeroG Generic PETG.json"
+        },
+        {
+            "name": "ZeroG Generic ABS",
+            "sub_path": "filament/ZeroG Generic ABS.json"
+        },
+        {
+            "name": "ZeroG Generic TPU",
+            "sub_path": "filament/ZeroG Generic TPU.json"
+        },
+        {
+            "name": "ZeroG Generic ASA",
+            "sub_path": "filament/ZeroG Generic ASA.json"
+        },
+        {
+            "name": "ZeroG Generic PC",
+            "sub_path": "filament/ZeroG Generic PC.json"
+        },
+        {
+            "name": "ZeroG Generic PVA",
+            "sub_path": "filament/ZeroG Generic PVA.json"
+        },
+        {
+            "name": "ZeroG Generic PA",
+            "sub_path": "filament/ZeroG Generic PA.json"
+        },
+        {
+            "name": "ZeroG Generic PA-CF",
+            "sub_path": "filament/ZeroG Generic PA-CF.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "machine/fdm_machine_common.json"
+        },
+        {
+            "name": "fdm_klipper_common",
+            "sub_path": "machine/fdm_klipper_common.json"
+        },
+		{
+            "name": "ZeroG Hydra 255",
+            "sub_path": "machine/ZeroG Hydra 255 0.4 nozzle.json"
+        },
+        {
+            "name": "ZeroG Hydra 275",
+            "sub_path": "machine/ZeroG Hydra 275 0.4 nozzle.json"
+        },
+        {
+            "name": "ZeroG Hydra 370",
+            "sub_path": "machine/ZeroG Hydra 370 0.4 nozzle.json"
+        },
+        {
+            "name": "ZeroG Hydra 410",
+            "sub_path": "machine/ZeroG Hydra 410 0.4 nozzle.json"
+        },
+        {
+            "name": "ZeroG Mercury 235",
+            "sub_path": "machine/ZeroG Mercury 235 0.4 nozzle.json"
+        },
+        {
+            "name": "ZeroG Mercury 370",
+            "sub_path": "machine/ZeroG Mercury 370 0.4 nozzle.json"
+        }
+		    ]
+}

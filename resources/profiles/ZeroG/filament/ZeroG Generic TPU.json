@@ -1,0 +1,31 @@
+{
+    "type": "filament",
+    "filament_id": "GFU99",
+    "setting_id": "GFSA04",
+    "name": "ZeroG Generic TPU",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_filament_tpu",
+    "filament_max_volumetric_speed": [
+        "5"
+    ],
+	"enable_pressure_advance": [
+        "1"
+    ],
+	"pressure_advance": [
+        "0.1"
+    ],
+    "nozzle_temperature": [
+        "220"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "compatible_printers": [
+      "ZeroG Hydra 255 0.4 nozzle",
+      "ZeroG Hydra 275 0.4 nozzle",
+      "ZeroG Hydra 370 0.4 nozzle",
+      "ZeroG Mercury 235 0.4 nozzle",
+      "ZeroG Mercury 370 0.4 nozzle"
+    ]
+}
