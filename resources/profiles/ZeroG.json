@@ -154,9 +154,21 @@
             "name": "fdm_klipper_common",
             "sub_path": "machine/fdm_klipper_common.json"
         },
-		{
-            "name": "ZeroG Hydra 255",
-            "sub_path": "machine/ZeroG Hydra 255 0.4 nozzle.json"
+        {
+            "name": "ZeroG Hydra 255 (0.4 nozzle)",
+            "sub_path": "machine/ZeroG Hydra 255 (0.4 nozzle).json"
+        },
+        {
+            "name": "ZeroG Hydra 255 (0.5 nozzle)",
+            "sub_path": "machine/ZeroG Hydra 255 (0.5 nozzle).json"
+        },
+        {
+            "name": "ZeroG Hydra 255 (0.6 nozzle)",
+            "sub_path": "machine/ZeroG Hydra 255 (0.6 nozzle).json"
+        },
+        {
+            "name": "ZeroG Hydra 255 (0.8 nozzle)",
+            "sub_path": "machine/ZeroG Hydra 255 (0.8 nozzle).json"
         },
         {
             "name": "ZeroG Hydra 275",
