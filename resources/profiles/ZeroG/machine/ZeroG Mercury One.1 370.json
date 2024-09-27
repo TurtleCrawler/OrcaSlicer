@@ -1,12 +1,12 @@
 {
-    "type": "machine_model",
-    "name": "ZeroG Mercury One.1 370",
-    "model_id": "MercuryOne1-370",
-    "nozzle_diameter": "0.4",
-    "machine_tech": "FFF",
-    "family": "ZeroG_MercuryOne1",
-    "bed_model": "ZeroG-MercuryOne1-370.stl",
-    "bed_texture": "ZeroG_Logo.png",
-    "hotend_model": "hotend.stl",
-    "default_materials": "ZeroG Generic ABS;ZeroG Generic PLA;ZeroG Generic PLA-CF;ZeroG Generic PETG;ZeroG Generic TPU;ZeroG Generic ASA;ZeroG Generic PC;ZeroG Generic PVA;ZeroG Generic PA;ZeroG Generic PA-CF"
+  "type": "machine_model",
+  "name": "ZeroG Mercury One.1 370",
+  "model_id": "M11-370",
+  "nozzle_diameter": "0.4",
+  "machine_tech": "FFF",
+  "family": "ZeroG_M11",
+  "bed_model": "ZeroG-M1.1-370.stl",
+  "bed_texture": "ZeroG_Logo.png",
+  "hotend_model": "hotend.stl",
+  "default_materials": "ZeroG Generic ABS;ZeroG Generic PLA;ZeroG Generic PLA-CF;ZeroG Generic PETG;ZeroG Generic TPU;ZeroG Generic ASA;ZeroG Generic PC;ZeroG Generic PVA;ZeroG Generic PA;ZeroG Generic PA-CF"
 }

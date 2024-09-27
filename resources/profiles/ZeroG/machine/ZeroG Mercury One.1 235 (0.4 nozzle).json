@@ -1,19 +1,11 @@
 {
   "type": "machine",
-  "setting_id": "GM004",
+  "setting_id": "GM008",
   "name": "ZeroG Mercury One.1 235 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "fdm_klipper_common",
-  "printer_model": "ZeroG Mercury One.1 235",
+  "inherits": "ZeroG_M1.1_255_common",
   "nozzle_diameter": [
     "0.4"
-  ],
-  "printable_area": [
-    "0x0",
-    "230x0",
-    "230x230",
-    "0x230"
-  ],
-  "printable_height": "350"
+  ]
 }

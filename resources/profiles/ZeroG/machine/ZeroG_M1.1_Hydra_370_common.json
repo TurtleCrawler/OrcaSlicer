@@ -1,0 +1,15 @@
+{
+  "type": "machine",
+  "name": "ZeroG_M1.1_Hydra_370_common",
+  "from": "system",
+  "instantiation": "false",
+  "inherits": "fdm_klipper_common",
+  "printer_model": "ZeroG M1.1 Hydra 370",
+  "printable_area": [
+    "0x0",
+    "365x0",
+    "365x365",
+    "0x365"
+  ],
+  "printable_height": "400"
+}
