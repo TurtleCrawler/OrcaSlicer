@@ -6,27 +6,27 @@
     "machine_model_list": [
         {
             "name": "ZeroG Hydra 255",
-            "sub_path": "machine/ZeroG Hydra 255.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 255.json"
         },
         {
             "name": "ZeroG Hydra 275",
-            "sub_path": "machine/ZeroG Hydra 275.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 275.json"
         },
         {
             "name": "ZeroG Hydra 370",
-            "sub_path": "machine/ZeroG Hydra 370.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 370.json"
         },
         {
             "name": "ZeroG Hydra 410",
-            "sub_path": "machine/ZeroG Hydra 410.json"
+            "sub_path": "machine/ZeroG Mercury One.1 &Hydra 410.json"
         },
         {
             "name": "ZeroG Mercury 235",
-            "sub_path": "machine/ZeroG Mercury 235.json"
+            "sub_path": "machine/ZeroG Mercury One.1 235.json"
         },
         {
             "name": "ZeroG Mercury 370",
-            "sub_path": "machine/ZeroG Mercury 370.json"
+            "sub_path": "machine/ZeroG Mercury One.1 370.json"
         }
     ],
     "process_list": [
@@ -156,39 +156,39 @@
         },
         {
             "name": "ZeroG Hydra 255 (0.4 nozzle)",
-            "sub_path": "machine/ZeroG Hydra 255 (0.4 nozzle).json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 255 (0.4 nozzle).json"
         },
         {
             "name": "ZeroG Hydra 255 (0.5 nozzle)",
-            "sub_path": "machine/ZeroG Hydra 255 (0.5 nozzle).json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 255 (0.5 nozzle).json"
         },
         {
             "name": "ZeroG Hydra 255 (0.6 nozzle)",
-            "sub_path": "machine/ZeroG Hydra 255 (0.6 nozzle).json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 255 (0.6 nozzle).json"
         },
         {
             "name": "ZeroG Hydra 255 (0.8 nozzle)",
-            "sub_path": "machine/ZeroG Hydra 255 (0.8 nozzle).json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 255 (0.8 nozzle).json"
         },
         {
             "name": "ZeroG Hydra 275",
-            "sub_path": "machine/ZeroG Hydra 275 0.4 nozzle.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 275 0.4 nozzle.json"
         },
         {
             "name": "ZeroG Hydra 370",
-            "sub_path": "machine/ZeroG Hydra 370 0.4 nozzle.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 370 0.4 nozzle.json"
         },
         {
             "name": "ZeroG Hydra 410",
-            "sub_path": "machine/ZeroG Hydra 410 0.4 nozzle.json"
+            "sub_path": "machine/ZeroG Mercury One.1 & Hydra 410 0.4 nozzle.json"
         },
         {
             "name": "ZeroG Mercury 235",
-            "sub_path": "machine/ZeroG Mercury 235 0.4 nozzle.json"
+            "sub_path": "machine/ZeroG Mercury One.1 235 0.4 nozzle.json"
         },
         {
             "name": "ZeroG Mercury 370",
-            "sub_path": "machine/ZeroG Mercury 370 0.4 nozzle.json"
+            "sub_path": "machine/ZeroG Mercury One.1 370 0.4 nozzle.json"
         }
 		    ]
 }

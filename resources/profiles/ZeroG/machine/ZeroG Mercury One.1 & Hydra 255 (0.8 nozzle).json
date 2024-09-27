@@ -1,11 +1,11 @@
 {
   "type": "machine",
   "setting_id": "GM001",
-  "name": "ZeroG Hydra 255 (0.8 nozzle)",
+  "name": "ZeroG Mercury One.1 & Hydra 255 (0.8 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_klipper_common",
-  "printer_model": "ZeroG Hydra 255",
+  "printer_model": "ZeroG Mercury One.1 & Hydra 255",
   "gcode_flavor": "klipper",
   "nozzle_diameter": [
     "0.8"

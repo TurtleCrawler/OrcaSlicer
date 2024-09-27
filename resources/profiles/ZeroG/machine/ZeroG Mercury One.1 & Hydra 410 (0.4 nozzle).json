@@ -1,19 +1,19 @@
 {
   "type": "machine",
-  "setting_id": "GM003",
-  "name": "ZeroG Hydra 370 0.4 nozzle",
+  "setting_id": "GM005",
+  "name": "ZeroG Mercury One.1 & Hydra 410 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_klipper_common",
-  "printer_model": "ZeroG Hydra 370",
+  "printer_model": "ZeroG Mercury One.1 & Hydra 410",
   "nozzle_diameter": [
     "0.4"
   ],
   "printable_area": [
     "0x0",
-    "365x0",
-    "365x365",
-    "0x365"
+    "405x0",
+    "405x405",
+    "0x405"
   ],
   "printable_height": "400"
 }

@@ -125,9 +125,9 @@
     "1"
   ],
   "default_filament_profile": [
-    "RatRig Generic ABS"
+    "ZeroG Generic PLA"
   ],
-  "default_print_profile": "0.20mm Standard @RatRig",
+  "default_print_profile": "0.20mm Standard @ZeroG",
   "bed_exclude_area": [
     "0x0"
   ],
@@ -137,5 +137,6 @@
   "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
   "scan_first_layer": "0",
   "nozzle_type": "undefine",
-  "auxiliary_fan": "0"
+  "auxiliary_fan": "0",
+  "support_multi_bed_types": "1"
 }
