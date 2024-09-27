@@ -1,0 +1,18 @@
+{
+  "type": "machine",
+  "setting_id": "GM026",
+  "name": "ZeroG M1.1 Hydra 410 (0.3 nozzle)",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "ZeroG_M1.1_Hydra_410_common",
+  "printer_variant": "0.3",
+  "nozzle_diameter": [
+    "0.3"
+  ],
+  "max_layer_height": [
+    "0.24"
+  ],
+  "min_layer_height": [
+    "0.08"
+  ]
+}

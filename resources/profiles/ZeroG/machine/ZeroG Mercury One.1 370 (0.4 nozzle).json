@@ -1,10 +1,11 @@
 {
   "type": "machine",
-  "setting_id": "GM009",
+  "setting_id": "GM043",
   "name": "ZeroG Mercury One.1 370 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "ZeroG_M1.1_370_common",
+  "printer_variant": "0.4",
   "nozzle_diameter": [
     "0.4"
   ]

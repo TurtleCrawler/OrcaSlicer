@@ -1,6 +1,6 @@
 {
   "type": "machine",
-  "setting_id": "GM007",
+  "setting_id": "GM027",
   "name": "ZeroG M1.1 Hydra 410 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",

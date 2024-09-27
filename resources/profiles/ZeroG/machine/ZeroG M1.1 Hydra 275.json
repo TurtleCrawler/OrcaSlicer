@@ -2,7 +2,7 @@
   "type": "machine_model",
   "name": "ZeroG M1.1 Hydra 275",
   "model_id": "M11Hydra-275",
-  "nozzle_diameter": "0.4",
+  "nozzle_diameter": "0.2;0.25;0.3;0.4;0.5;0.6;0.8;1.0",
   "machine_tech": "FFF",
   "family": "ZeroG_M11Hydra",
   "bed_model": "ZeroG-M1.1Hydra-275.stl",

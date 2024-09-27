@@ -1,6 +1,6 @@
 {
   "type": "machine",
-  "setting_id": "GM005",
+  "setting_id": "GM011",
   "name": "ZeroG M1.1 Hydra 275 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",

@@ -1,10 +1,11 @@
 {
   "type": "machine",
-  "setting_id": "GM008",
+  "setting_id": "GM035",
   "name": "ZeroG Mercury One.1 235 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "ZeroG_M1.1_255_common",
+  "printer_variant": "0.4",
   "nozzle_diameter": [
     "0.4"
   ]

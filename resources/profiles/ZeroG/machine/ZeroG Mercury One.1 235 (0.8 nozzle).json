@@ -1,10 +1,10 @@
 {
   "type": "machine",
-  "setting_id": "GM006",
-  "name": "ZeroG M1.1 Hydra 255 (0.8 nozzle)",
+  "setting_id": "GM038",
+  "name": "ZeroG Mercury One.1 235 (0.8 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "ZeroG_M1.1_Hydra_255_common",
+  "inherits": "ZeroG_M1.1_255_common",
   "printer_variant": "0.8",
   "nozzle_diameter": [
     "0.8"

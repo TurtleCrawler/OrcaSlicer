@@ -1,18 +1,18 @@
 {
   "type": "machine",
-  "setting_id": "GM004",
-  "name": "ZeroG M1.1 Hydra 255 (0.5 nozzle)",
+  "setting_id": "GM002",
+  "name": "ZeroG M1.1 Hydra 255 (0.3 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "ZeroG_M1.1_Hydra_255_common",
-  "printer_variant": "0.5",
+  "printer_variant": "0.3",
   "nozzle_diameter": [
-    "0.5"
+    "0.3"
   ],
   "max_layer_height": [
-    "0.4"
+    "0.24"
   ],
   "min_layer_height": [
-    "0.12"
+    "0.08"
   ]
 }
