@@ -4,17 +4,9 @@
   "name": "ZeroG Mercury One.1 & Hydra 255 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "fdm_klipper_common",
-  "printer_model": "ZeroG Mercury One.1 & Hydra 255",
+  "inherits": "ZeroG Mercury One.1 & Hydra 255 Common",
   "nozzle_diameter": [
     "0.4"
   ],
-  "printer_variant": "0.4",
-  "printable_area": [
-    "0x0",
-    "250x0",
-    "250x250",
-    "0x250"
-  ],
-  "printable_height": "300"
+  "printer_variant": "0.4"
 }
