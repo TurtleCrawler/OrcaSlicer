@@ -1,0 +1,15 @@
+{
+    "type": "machine",
+    "name": "ZeroG Mercury One.1 & Hydra 255 Common",
+    "from": "system",
+    "instantiation": "false",
+    "inherits": "fdm_klipper_common",
+    "printer_model": "ZeroG Mercury One.1 & Hydra 255",
+    "printable_area": [
+      "0x0",
+      "250x0",
+      "250x250",
+      "0x250"
+    ],
+    "printable_height": "300"
+  }

@@ -1,20 +1,18 @@
 {
   "type": "machine",
-  "setting_id": "GM001",
+  "setting_id": "GM003",
   "name": "ZeroG Mercury One.1 & Hydra 255 (0.6 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "fdm_klipper_common",
-  "printer_model": "ZeroG Mercury One.1 & Hydra 255",
-  "gcode_flavor": "klipper",
+  "inherits": "ZeroG Mercury One.1 & Hydra 255 Common",
+  "printer_variant": "0.6",
   "nozzle_diameter": [
     "0.6"
   ],
-  "printable_area": [
-    "0x0",
-    "250x0",
-    "250x250",
-    "0x250"
+  "max_layer_height": [
+    "0.48"
   ],
-  "printable_height": "300"
+  "min_layer_height": [
+    "0.16"
+  ]
 }
