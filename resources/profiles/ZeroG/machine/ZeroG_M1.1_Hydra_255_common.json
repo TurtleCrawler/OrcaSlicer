@@ -3,7 +3,7 @@
   "name": "ZeroG_M1.1_Hydra_255_common",
   "from": "system",
   "instantiation": "false",
-  "inherits": "fdm_klipper_common",
+  "inherits": "fdm_zerog_common",
   "printer_model": "ZeroG M1.1 Hydra 255",
   "printable_area": [
     "0x0",

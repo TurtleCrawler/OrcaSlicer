@@ -1,6 +1,6 @@
 {
   "type": "machine",
-  "name": "fdm_klipper_common",
+  "name": "fdm_zerog_common",
   "from": "system",
   "instantiation": "false",
   "inherits": "fdm_machine_common",
@@ -74,10 +74,10 @@
     "0"
   ],
   "max_layer_height": [
-    "0.3"
+    "0.32"
   ],
   "min_layer_height": [
-    "0.05"
+    "0.08"
   ],
   "printable_height": "500",
   "extruder_clearance_radius": "45",

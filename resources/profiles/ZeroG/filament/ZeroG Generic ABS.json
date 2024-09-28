@@ -1,53 +1,95 @@
 {
-    "type": "filament",
-    "filament_id": "GFB99",
-    "setting_id": "GFSA04",
-    "name": "ZeroG Generic ABS",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_filament_abs",
-    "filament_flow_ratio": [
-        "0.960"
-    ],
-    "filament_max_volumetric_speed": [
-        "18"
-    ],
-	
+  "type": "filament",
+  "filament_id": "GFB99",
+  "setting_id": "GFSA04",
+  "name": "ZeroG Generic ABS",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "fdm_filament_abs",
+  "filament_flow_ratio": [
+    "0.960"
+  ],
+  "filament_max_volumetric_speed": [
+    "18"
+  ],
 	"enable_pressure_advance": [
-        "1"
-    ],
+    "1"
+  ],
 	"pressure_advance": [
-        "0.03"
-    ],
-    "hot_plate_temp_initial_layer" : [
-        "100"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "250"
-    ],
-    "nozzle_temperature": [
-        "255"
-    ],
-    "close_fan_the_first_x_layers": [
-        "2"
-    ],
-    "fan_cooling_layer_time": [
-        "10"
-    ],
-    "fan_max_speed": [
-        "35"
-    ],
-    "fan_min_speed": [
-        "20"
-    ],
-    "overhang_fan_speed": [
-        "35"
-    ],
-    "compatible_printers": [
-      "ZeroG Hydra 255 0.4 nozzle",
-      "ZeroG Hydra 275 0.4 nozzle",
-      "ZeroG Hydra 370 0.4 nozzle",
-      "ZeroG Mercury 235 0.4 nozzle",
-      "ZeroG Mercury 370 0.4 nozzle"
-    ]
+    "0.03"
+  ],
+  "hot_plate_temp_initial_layer" : [
+    "100"
+  ],
+  "nozzle_temperature_initial_layer": [
+    "250"
+  ],
+  "nozzle_temperature": [
+    "255"
+  ],
+  "close_fan_the_first_x_layers": [
+    "2"
+  ],
+  "fan_cooling_layer_time": [
+    "10"
+  ],
+  "fan_max_speed": [
+    "35"
+  ],
+  "fan_min_speed": [
+    "20"
+  ],
+  "overhang_fan_speed": [
+    "35"
+  ],
+  "compatible_printers": [
+    "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.25 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.3 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.4 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.5 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 255 (0.8 nozzle)",
+    "ZeroG M1.1 Hydra 255 (1.0 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.2 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.25 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.3 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.4 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.5 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.8 nozzle)",
+    "ZeroG M1.1 Hydra 275 (1.0 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.2 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.25 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.3 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.4 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.5 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.8 nozzle)",
+    "ZeroG M1.1 Hydra 370 (1.0 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.2 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.25 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.3 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.4 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.5 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.8 nozzle)",
+    "ZeroG M1.1 Hydra 400 (1.0 nozzle)",
+    "ZeroG Mercury One.1 235 (0.2 nozzle)",
+    "ZeroG Mercury One.1 235 (0.25 nozzle)",
+    "ZeroG Mercury One.1 235 (0.3 nozzle)",
+    "ZeroG Mercury One.1 235 (0.4 nozzle)",
+    "ZeroG Mercury One.1 235 (0.5 nozzle)",
+    "ZeroG Mercury One.1 235 (0.6 nozzle)",
+    "ZeroG Mercury One.1 235 (0.8 nozzle)",
+    "ZeroG Mercury One.1 235 (1.0 nozzle)",
+    "ZeroG Mercury One.1 370 (0.2 nozzle)",
+    "ZeroG Mercury One.1 370 (0.25 nozzle)",
+    "ZeroG Mercury One.1 370 (0.3 nozzle)",
+    "ZeroG Mercury One.1 370 (0.4 nozzle)",
+    "ZeroG Mercury One.1 370 (0.5 nozzle)",
+    "ZeroG Mercury One.1 370 (0.6 nozzle)",
+    "ZeroG Mercury One.1 370 (0.8 nozzle)",
+    "ZeroG Mercury One.1 370 (1.0 nozzle)"
+  ]
 }
