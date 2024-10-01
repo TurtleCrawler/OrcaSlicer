@@ -1,10 +1,10 @@
 {
   "type": "process",
-  "setting_id": "GP004",
+  "setting_id": "GP018",
   "name": "0.20mm Speed (0.4 nozzle) @ZeroG",
   "from": "system",
   "instantiation": "true",
-  "inherits": "fdm_process_ZeroG_common_0_4",
+  "inherits": "fdm_process_ZeroG_common",
   "accel_to_decel_enable": "1",
   "bottom_shell_layers": "5",
   "bottom_surface_pattern": "zig-zag",

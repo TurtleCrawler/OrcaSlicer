@@ -1,10 +1,10 @@
 {
   "type": "process",
-  "setting_id": "GP004",
+  "setting_id": "GP025",
   "name": "0.20mm ZeroG Parts (0.4 nozzle) @ZeroG",
   "from": "system",
   "instantiation": "true",
-  "inherits": "fdm_process_ZeroG_common_0_4",
+  "inherits": "fdm_process_ZeroG_common",
   "bottom_shell_layers": "5",
   "bridge_flow": "1",
   "enable_support": "0",

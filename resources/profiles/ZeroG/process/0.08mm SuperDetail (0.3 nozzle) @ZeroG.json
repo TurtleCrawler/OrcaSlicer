@@ -1,6 +1,6 @@
 {
     "type": "process",
-    "setting_id": "GP004",
+    "setting_id": "GP002",
     "name": "0.08mm SuperDetail (0.3 nozzle) @ZeroG",
     "from": "system",
     "instantiation": "true",

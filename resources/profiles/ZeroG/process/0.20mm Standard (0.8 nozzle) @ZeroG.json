@@ -1,6 +1,6 @@
 {
   "type": "process",
-  "setting_id": "GP004",
+  "setting_id": "GP023",
   "name": "0.20mm Standard (0.8 nozzle) @ZeroG",
   "from": "system",
   "instantiation": "true",

@@ -1,6 +1,6 @@
 {
     "type": "process",
-    "setting_id": "GP004",
+    "setting_id": "GP034",
     "name": "0.28mm SuperDraft (1.0 nozzle) @ZeroG",
     "from": "system",
     "instantiation": "true",

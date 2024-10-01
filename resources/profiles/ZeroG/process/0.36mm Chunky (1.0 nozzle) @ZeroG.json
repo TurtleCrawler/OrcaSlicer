@@ -1,6 +1,6 @@
 {
     "type": "process",
-    "setting_id": "GP004",
+    "setting_id": "GP038",
     "name": "0.36mm Chunky (1.0 nozzle) @ZeroG",
     "from": "system",
     "instantiation": "true",
