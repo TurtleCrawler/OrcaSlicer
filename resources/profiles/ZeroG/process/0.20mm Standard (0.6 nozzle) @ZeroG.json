@@ -1,0 +1,21 @@
+{
+  "type": "process",
+  "setting_id": "GP004",
+  "name": "0.20mm Standard (0.6 nozzle) @ZeroG",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "fdm_process_ZeroG_common_0_6",
+  "bottom_shell_layers": "4",
+  "top_shell_layers": "4",
+  "layer_height": "0.20",
+  "initial_layer_print_height": "0.20",
+  "bridge_flow": "1",
+  "compatible_printers": [
+    "ZeroG M1.1 Hydra 255 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 275 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 370 (0.6 nozzle)",
+    "ZeroG M1.1 Hydra 400 (0.6 nozzle)",
+    "ZeroG Mercury One.1 235 (0.6 nozzle)",
+    "ZeroG Mercury One.1 370 (0.6 nozzle)"
+  ]
+}
