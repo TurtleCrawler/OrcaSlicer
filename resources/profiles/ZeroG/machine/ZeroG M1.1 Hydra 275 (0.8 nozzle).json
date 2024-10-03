@@ -6,13 +6,11 @@
   "instantiation": "true",
   "inherits": "ZeroG_M1.1_Hydra_275_common",
   "printer_variant": "0.8",
-  "nozzle_diameter": [
-    "0.8"
-  ],
-  "max_layer_height": [
-    "0.64"
-  ],
-  "min_layer_height": [
-    "0.2"
+  "nozzle_diameter": ["0.8"],
+  "max_layer_height": ["0.64"],
+  "min_layer_height": ["0.2"],
+  "default_print_profile": "0.36mm Chunky (0.8 nozzle) @ZeroG",
+  "default_filament_profile": [
+    "ZeroG Generic PLA"
   ]
 }

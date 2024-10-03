@@ -6,13 +6,11 @@
   "instantiation": "true",
   "inherits": "ZeroG_M1.1_Hydra_370_common",
   "printer_variant": "0.6",
-  "nozzle_diameter": [
-    "0.6"
-  ],
-  "max_layer_height": [
-    "0.48"
-  ],
-  "min_layer_height": [
-    "0.16"
+  "nozzle_diameter": ["0.6"],
+  "max_layer_height": ["0.48"],
+  "min_layer_height": ["0.16"],
+  "default_print_profile": "0.28mm SuperDraft (0.6 nozzle) @ZeroG",
+  "default_filament_profile": [
+    "ZeroG Generic PLA"
   ]
 }

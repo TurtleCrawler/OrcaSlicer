@@ -6,42 +6,16 @@
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_filament_abs",
-  "filament_flow_ratio": [
-    "0.960"
-  ],
-  "filament_max_volumetric_speed": [
-    "18"
-  ],
-	"enable_pressure_advance": [
-    "1"
-  ],
-	"pressure_advance": [
-    "0.03"
-  ],
-  "hot_plate_temp_initial_layer" : [
-    "100"
-  ],
-  "nozzle_temperature_initial_layer": [
-    "250"
-  ],
-  "nozzle_temperature": [
-    "255"
-  ],
-  "close_fan_the_first_x_layers": [
-    "2"
-  ],
-  "fan_cooling_layer_time": [
-    "10"
-  ],
-  "fan_max_speed": [
-    "35"
-  ],
-  "fan_min_speed": [
-    "20"
-  ],
-  "overhang_fan_speed": [
-    "35"
-  ],
+  "filament_flow_ratio": ["0.960"],
+  "filament_max_volumetric_speed": ["18"],
+	"hot_plate_temp_initial_layer" : ["100"],
+  "nozzle_temperature_initial_layer": ["250"],
+  "nozzle_temperature": ["260"],
+  "close_fan_the_first_x_layers": ["2"],
+  "fan_cooling_layer_time": ["10"],
+  "fan_max_speed": ["40"],
+  "fan_min_speed": ["15"],
+  "overhang_fan_speed": ["35"],
   "compatible_printers": [
     "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",
