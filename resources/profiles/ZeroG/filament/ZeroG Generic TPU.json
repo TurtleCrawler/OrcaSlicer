@@ -1,28 +1,28 @@
 {
-    "type": "filament",
-    "filament_id": "GFU99",
-    "setting_id": "GFSA04",
-    "name": "ZeroG Generic TPU",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_filament_tpu",
-    "filament_max_volumetric_speed": [
-        "5"
-    ],
+  "type": "filament",
+  "filament_id": "GFLZ10",
+  "setting_id": "GFSZ10",
+  "name": "ZeroG Generic TPU",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "fdm_filament_tpu",
+  "filament_max_volumetric_speed": [
+    "5"
+  ],
 	"enable_pressure_advance": [
-        "1"
-    ],
+    "1"
+  ],
 	"pressure_advance": [
-        "0.1"
-    ],
-    "nozzle_temperature": [
-        "220"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "220"
-    ],
-    "compatible_printers": [
-      "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
+    "0.1"
+  ],
+  "nozzle_temperature": [
+    "220"
+  ],
+  "nozzle_temperature_initial_layer": [
+    "220"
+  ],
+  "compatible_printers": [
+    "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.3 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.4 nozzle)",
@@ -70,5 +70,5 @@
     "ZeroG Mercury One.1 370 (0.6 nozzle)",
     "ZeroG Mercury One.1 370 (0.8 nozzle)",
     "ZeroG Mercury One.1 370 (1.0 nozzle)"
-    ]
+  ]
 }

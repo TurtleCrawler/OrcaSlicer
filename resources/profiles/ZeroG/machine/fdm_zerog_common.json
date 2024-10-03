@@ -119,8 +119,8 @@
   "z_lift_type": "NormalLift",
   "silent_mode": "0",
   "single_extruder_multi_material": "1",
-  "change_filament_gcode": "M600",
-  "machine_pause_gcode": "M601",
+  "change_filament_gcode": "PAUSE",
+  "machine_pause_gcode": "PAUSE",
   "wipe": [
     "1"
   ],

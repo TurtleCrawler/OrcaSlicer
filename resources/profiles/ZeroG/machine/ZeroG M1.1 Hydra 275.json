@@ -4,7 +4,7 @@
   "model_id": "M11Hydra-275",
   "nozzle_diameter": "0.2;0.25;0.3;0.4;0.5;0.6;0.8;1.0",
   "machine_tech": "FFF",
-  "family": "ZeroG_M11Hydra",
+  "family": "ZeroG",
   "bed_model": "ZeroG-M1.1Hydra-275.stl",
   "bed_texture": "ZeroG_Logo.png",
   "hotend_model": "hotend.stl",

@@ -1,7 +1,7 @@
 {
     "type": "filament",
-    "filament_id": "GFC99",
-    "setting_id": "GFSA04",
+    "filament_id": "GFLZ05",
+    "setting_id": "GFSZ05",
     "name": "ZeroG Generic PC",
     "from": "system",
     "instantiation": "true",
