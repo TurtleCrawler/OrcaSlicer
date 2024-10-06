@@ -6,21 +6,9 @@
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_filament_tpu",
-  "filament_max_volumetric_speed": [
-    "5"
-  ],
-	"enable_pressure_advance": [
-    "1"
-  ],
-	"pressure_advance": [
-    "0.1"
-  ],
-  "nozzle_temperature": [
-    "220"
-  ],
-  "nozzle_temperature_initial_layer": [
-    "220"
-  ],
+  "filament_max_volumetric_speed": ["5"],
+	"nozzle_temperature": ["220"],
+  "nozzle_temperature_initial_layer": ["220"],
   "compatible_printers": [
     "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",

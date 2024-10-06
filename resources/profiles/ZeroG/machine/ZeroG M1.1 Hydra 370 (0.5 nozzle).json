@@ -4,11 +4,18 @@
   "name": "ZeroG M1.1 Hydra 370 (0.5 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "ZeroG_M1.1_Hydra_370_common",
+  "inherits": "fdm_zerog_common",
   "printer_variant": "0.5",
   "nozzle_diameter": ["0.5"],
   "max_layer_height": ["0.4"],
   "min_layer_height": ["0.12"],
+  "printable_area": [
+    "0x0",
+    "365x0",
+    "365x365",
+    "0x365"
+  ],
+  "printable_height": "400",
   "default_print_profile": "0.24mm Draft (0.5 nozzle) @ZeroG",
   "default_filament_profile": [
     "ZeroG Generic PLA"

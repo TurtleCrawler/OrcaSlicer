@@ -4,9 +4,16 @@
   "name": "ZeroG M1.1 Hydra 255 (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "ZeroG_M1.1_Hydra_255_common",
+  "inherits": "fdm_zerog_common",
   "printer_variant": "0.4",
   "nozzle_diameter": ["0.4"],
+  "printable_area": [
+    "0x0",
+    "250x0",
+    "250x250",
+    "0x250"
+  ],
+  "printable_height": "300",
   "default_print_profile": "0.20mm Standard (0.4 nozzle) @ZeroG",
   "default_filament_profile": [
     "ZeroG Generic PLA"

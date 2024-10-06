@@ -4,11 +4,18 @@
   "name": "ZeroG M1.1 Hydra 275 (0.2 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "ZeroG_M1.1_Hydra_275_common",
+  "inherits": "fdm_zerog_common",
   "printer_variant": "0.2",
   "nozzle_diameter": ["0.2"],
   "max_layer_height": ["0.16"],
   "min_layer_height": ["0.05"],
+  "printable_area": [
+    "0x0",
+    "270x0",
+    "270x270",
+    "0x270"
+  ],
+  "printable_height": "300",
   "default_print_profile": "0.10mm HighDetail (0.2 nozzle) @ZeroG",
   "default_filament_profile": [
     "ZeroG Generic PLA"

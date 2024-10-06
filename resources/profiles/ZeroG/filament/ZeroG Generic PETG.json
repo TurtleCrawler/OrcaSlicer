@@ -1,61 +1,27 @@
 {
-    "type": "filament",
-    "filament_id": "GFLZ06",
-    "setting_id": "GFSZ06",
-    "name": "ZeroG Generic PETG",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_filament_pet",
-    "reduce_fan_stop_start_freq": [
-        "1"
-    ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
-    "fan_cooling_layer_time": [
-        "10"
-    ],
-    "overhang_fan_speed": [
-        "100"
-    ],
-    "overhang_fan_threshold": [
-        "25%"
-    ],
-    "fan_max_speed": [
-        "100"
-    ],
-    "fan_min_speed": [
-        "40"
-    ],
-    "slow_down_min_speed": [
-        "20"
-    ],
-    "slow_down_layer_time": [
-        "8"
-    ],
-    "filament_flow_ratio": [
-        "0.94"
-    ],
-    "filament_max_volumetric_speed": [
-        "11"
-    ],
-	"enable_pressure_advance": [
-        "1"
-    ],
-	"pressure_advance": [
-        "0.045"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "240"
-    ],
-    "nozzle_temperature": [
-        "235"
-    ],
-    "nozzle_temperature_range_high": [
-        "250"
-    ],
-    "compatible_printers": [
-      "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
+  "type": "filament",
+  "filament_id": "GFLZ06",
+  "setting_id": "GFSZ06",
+  "name": "ZeroG Generic PETG",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "fdm_filament_pet",
+  "reduce_fan_stop_start_freq": ["1"],
+  "slow_down_for_layer_cooling": ["1"],
+  "fan_cooling_layer_time": ["10"],
+  "overhang_fan_speed": ["100"],
+  "overhang_fan_threshold": ["25%"],
+  "fan_max_speed": ["100"],
+  "fan_min_speed": ["40"],
+  "slow_down_min_speed": ["20"],
+  "slow_down_layer_time": ["8"],
+  "filament_flow_ratio": ["0.94"],
+  "filament_max_volumetric_speed": ["11"],
+	"nozzle_temperature_initial_layer": ["240"],
+  "nozzle_temperature": ["235"],
+  "nozzle_temperature_range_high": ["250"],
+  "compatible_printers": [
+    "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.3 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.4 nozzle)",
@@ -103,5 +69,5 @@
     "ZeroG Mercury One.1 370 (0.6 nozzle)",
     "ZeroG Mercury One.1 370 (0.8 nozzle)",
     "ZeroG Mercury One.1 370 (1.0 nozzle)"
-    ]
+  ]
 }

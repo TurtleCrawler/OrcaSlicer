@@ -4,11 +4,18 @@
   "name": "ZeroG Mercury One.1 235 (1.0 nozzle)",
   "from": "system",
   "instantiation": "true",
-  "inherits": "ZeroG_M1.1_255_common",
+  "inherits": "fdm_zerog_common",
   "printer_variant": "1.0",
   "nozzle_diameter": ["1.0"],
   "max_layer_height": ["0.80"],
   "min_layer_height": ["0.25"],
+  "printable_area": [
+    "0x0",
+    "230x0",
+    "230x230",
+    "0x230"
+  ],
+  "printable_height": "350",
   "default_print_profile": "0.48mm Chunky (1.0 nozzle) @ZeroG",
   "default_filament_profile": [
     "ZeroG Generic PLA"

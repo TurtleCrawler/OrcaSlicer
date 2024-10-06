@@ -1,37 +1,21 @@
 {
-    "type": "filament",
-    "filament_id": "GFLZ05",
-    "setting_id": "GFSZ05",
-    "name": "ZeroG Generic PC",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_filament_pc",
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "filament_flow_ratio": [
-        "0.93"
-    ],
-	"enable_pressure_advance": [
-        "1"
-    ],
-	"pressure_advance": [
-        "0.045"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature_range_high": [
-        "290"
-    ],
-    "hot_plate_temp" : [
-        "100"
-    ],
-    "hot_plate_temp_initial_layer" : [
-        "100"
-    ],
-    "compatible_printers": [
-      "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
+  "type": "filament",
+  "filament_id": "GFLZ05",
+  "setting_id": "GFSZ05",
+  "name": "ZeroG Generic PC",
+  "from": "system",
+  "instantiation": "true",
+  "inherits": "fdm_filament_pc",
+  "filament_max_volumetric_speed": ["12"],
+  "filament_flow_ratio": ["0.93"],
+	"enable_pressure_advance": ["1"],
+	"pressure_advance": ["0.045"],
+  "nozzle_temperature_initial_layer": ["280"],
+  "nozzle_temperature_range_high": ["290"],
+  "hot_plate_temp" : ["100"],
+  "hot_plate_temp_initial_layer" : ["100"],
+  "compatible_printers": [
+    "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.3 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.4 nozzle)",
@@ -79,5 +63,5 @@
     "ZeroG Mercury One.1 370 (0.6 nozzle)",
     "ZeroG Mercury One.1 370 (0.8 nozzle)",
     "ZeroG Mercury One.1 370 (1.0 nozzle)"
-    ]
+  ]
 }
