@@ -1,7 +1,7 @@
 {
   "type": "filament",
-  "filament_id": "GFLZ10",
-  "setting_id": "GFSZ10",
+  "filament_id": "GFU99",
+  "setting_id": "GFSA04",
   "name": "ZeroG Generic TPU",
   "from": "system",
   "instantiation": "true",

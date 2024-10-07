@@ -1,7 +1,7 @@
 {
   "type": "filament",
-  "filament_id": "GFLZ01",
-  "setting_id": "GFSZA01",
+  "filament_id": "GFB99",
+  "setting_id": "GFSA04",
   "name": "ZeroG Generic ABS",
   "from": "system",
   "instantiation": "true",

@@ -7,6 +7,7 @@
   "inherits": "fdm_zerog_common",
   "printer_variant": "0.2",
   "nozzle_diameter": ["0.2"],
+  "nozzle_type": "undefine",
   "max_layer_height": ["0.16"],
   "min_layer_height": ["0.05"],
   "printable_area": [

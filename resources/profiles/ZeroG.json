@@ -1,7 +1,7 @@
 {
   "name": "ZeroG",
   "version": "01.04.05.00",
-  "force_update": "1",
+  "force_update": "0",
   "description": "ZeroG configurations",
   "machine_model_list": [
     {

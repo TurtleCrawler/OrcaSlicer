@@ -7,6 +7,7 @@
   "inherits": "fdm_zerog_common",
   "printer_variant": "0.4",
   "nozzle_diameter": ["0.4"],
+  "nozzle_type": "undefine",
   "printable_area": [
     "0x0",
     "250x0",
