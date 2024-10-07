@@ -39,14 +39,6 @@
       "sub_path": "process/fdm_process_ZeroG_common.json"
     },
     {
-      "name": "fdm_process_ZeroG_common_0_2",
-      "sub_path": "process/fdm_process_ZeroG_common_0_2.json"
-    },
-    {
-      "name": "fdm_process_ZeroG_common_0_3",
-      "sub_path": "process/fdm_process_ZeroG_common_0_3.json"
-    },
-    {
       "name": "fdm_process_ZeroG_common_0_5",
       "sub_path": "process/fdm_process_ZeroG_common_0_5.json"
     },
@@ -63,40 +55,12 @@
       "sub_path": "process/fdm_process_ZeroG_common_0_25.json"
     },
     {
-      "name": "fdm_process_ZeroG_common_1_0",
-      "sub_path": "process/fdm_process_ZeroG_common_1_0.json"
-    },
-    {
-      "name": "0.08mm SuperDetail (0.2 nozzle) @ZeroG",
-      "sub_path": "process/0.08mm SuperDetail (0.2 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.08mm SuperDetail (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.08mm SuperDetail (0.3 nozzle) @ZeroG.json"
-    },
-    {
       "name": "0.08mm SuperDetail (0.25 nozzle) @ZeroG",
       "sub_path": "process/0.08mm SuperDetail (0.25 nozzle) @ZeroG.json"
     },
     {
-      "name": "0.10mm HighDetail (0.2 nozzle) @ZeroG",
-      "sub_path": "process/0.10mm HighDetail (0.2 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.10mm HighDetail (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.10mm HighDetail (0.3 nozzle) @ZeroG.json"
-    },
-    {
       "name": "0.10mm HighDetail (0.25 nozzle) @ZeroG",
       "sub_path": "process/0.10mm HighDetail (0.25 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.12mm Detail (0.2 nozzle) @ZeroG",
-      "sub_path": "process/0.12mm Detail (0.2 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.12mm Detail (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.12mm Detail (0.3 nozzle) @ZeroG.json"
     },
     {
       "name": "0.12mm Detail (0.4 nozzle) @ZeroG",
@@ -109,14 +73,6 @@
     {
       "name": "0.12mm Detail (0.25 nozzle) @ZeroG",
       "sub_path": "process/0.12mm Detail (0.25 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.16mm Optimal (0.2 nozzle) @ZeroG",
-      "sub_path": "process/0.16mm Optimal (0.2 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.16mm Optimal (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.16mm Optimal (0.3 nozzle) @ZeroG.json"
     },
     {
       "name": "0.16mm Optimal (0.4 nozzle) @ZeroG",
@@ -137,10 +93,6 @@
     {
       "name": "0.20mm Speed (0.4 nozzle) @ZeroG",
       "sub_path": "process/0.20mm Speed (0.4 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.20mm Standard (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.20mm Standard (0.3 nozzle) @ZeroG.json"
     },
     {
       "name": "0.20mm Standard (0.4 nozzle) @ZeroG",
@@ -165,10 +117,6 @@
     {
       "name": "0.20mm ZeroG Parts (0.4 nozzle) @ZeroG",
       "sub_path": "process/0.20mm ZeroG Parts (0.4 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.24mm Draft (0.3 nozzle) @ZeroG",
-      "sub_path": "process/0.24mm Draft (0.3 nozzle) @ZeroG.json"
     },
     {
       "name": "0.24mm Draft (0.4 nozzle) @ZeroG",
@@ -199,10 +147,6 @@
       "sub_path": "process/0.28mm SuperDraft (0.8 nozzle) @ZeroG.json"
     },
     {
-      "name": "0.28mm SuperDraft (1.0 nozzle) @ZeroG",
-      "sub_path": "process/0.28mm SuperDraft (1.0 nozzle) @ZeroG.json"
-    },
-    {
       "name": "0.36mm Chunky (0.5 nozzle) @ZeroG",
       "sub_path": "process/0.36mm Chunky (0.5 nozzle) @ZeroG.json"
     },
@@ -215,20 +159,12 @@
       "sub_path": "process/0.36mm Chunky (0.8 nozzle) @ZeroG.json"
     },
     {
-      "name": "0.36mm Chunky (1.0 nozzle) @ZeroG",
-      "sub_path": "process/0.36mm Chunky (1.0 nozzle) @ZeroG.json"
-    },
-    {
       "name": "0.48mm Chunky (0.6 nozzle) @ZeroG",
       "sub_path": "process/0.48mm Chunky (0.6 nozzle) @ZeroG.json"
     },
     {
       "name": "0.48mm Chunky (0.8 nozzle) @ZeroG",
       "sub_path": "process/0.48mm Chunky (0.8 nozzle) @ZeroG.json"
-    },
-    {
-      "name": "0.48mm Chunky (1.0 nozzle) @ZeroG",
-      "sub_path": "process/0.48mm Chunky (1.0 nozzle) @ZeroG.json"
     }
   ],
   "filament_list": [
