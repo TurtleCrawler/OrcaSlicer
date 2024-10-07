@@ -5,6 +5,7 @@
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_zerog_common",
+  "printer_model": "ZeroG M1.1 Hydra 255",
   "printer_variant": "0.6",
   "nozzle_diameter": ["0.6"],
   "nozzle_type": "undefine",
