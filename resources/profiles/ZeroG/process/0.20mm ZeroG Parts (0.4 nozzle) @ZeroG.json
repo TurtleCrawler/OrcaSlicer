@@ -18,7 +18,7 @@
   "seam_position": "back",
   "sparse_infill_density": "40%",
   "sparse_infill_line_width": "0.40",
-  "sparse_infill_pattern": "adaptive_cubic",
+  "sparse_infill_pattern": "adaptivecubic",
   "top_shell_layers": "5",
   "top_surface_line_width": "0.40",
   "wall_loops": "4",
