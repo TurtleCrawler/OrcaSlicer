@@ -1,7 +1,7 @@
 {
   "name": "ZeroG",
   "version": "01.04.05.00",
-  "force_update": "0",
+  "force_update": "1",
   "description": "ZeroG configurations",
   "machine_model_list": [
     {
@@ -133,6 +133,10 @@
     {
       "name": "0.24mm Draft (0.8 nozzle) @ZeroG",
       "sub_path": "process/0.24mm Draft (0.8 nozzle) @ZeroG.json"
+    },
+    {
+      "name": "0.25mm Precurssor's Zeus (Warning!) @ZeroG",
+      "sub_path": "process/0.25mm Precurssor's Zeus (Warning!) @ZeroG.json"
     },
     {
       "name": "0.28mm SuperDraft (0.5 nozzle) @ZeroG",
