@@ -1,7 +1,7 @@
 {
   "type": "process",
   "setting_id": "GP018",
-  "name": "0.20mm Speed (0.4 nozzle) @ZeroG",
+  "name": "0.20mm Speed-Quality (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_process_ZeroG_common",

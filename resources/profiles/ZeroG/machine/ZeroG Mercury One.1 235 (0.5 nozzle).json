@@ -8,7 +8,7 @@
   "printer_model": "ZeroG Mercury One.1 235",
   "printer_variant": "0.5",
   "nozzle_diameter": ["0.5"],
-  "max_layer_height": ["0.4"],
+  "max_layer_height": ["0.38"],
   "min_layer_height": ["0.12"],
   "printable_area": [
     "0x0",
@@ -17,7 +17,7 @@
     "0x230"
   ],
   "printable_height": "350",
-  "default_print_profile": "0.24mm Draft (0.5 nozzle) @ZeroG",
+  "default_print_profile": "0.24mm Draft (0.5 nozzle)",
   "default_filament_profile": [
     "ZeroG Generic PLA"
   ]

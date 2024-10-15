@@ -8,7 +8,7 @@
   "printer_model": "ZeroG M1.1 Hydra 400",
   "printer_variant": "0.8",
   "nozzle_diameter": ["0.8"],
-  "max_layer_height": ["0.64"],
+  "max_layer_height": ["0.6"],
   "min_layer_height": ["0.2"],
   "printable_area": [
     "0x0",
@@ -17,7 +17,7 @@
     "0x395"
   ],
   "printable_height": "400",
-  "default_print_profile": "0.36mm Chunky (0.8 nozzle) @ZeroG",
+  "default_print_profile": "0.36mm Chunky (0.8 nozzle)",
   "default_filament_profile": [
     "ZeroG Generic PLA"
   ]

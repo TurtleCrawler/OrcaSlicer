@@ -1,7 +1,7 @@
 {
     "type": "process",
     "setting_id": "GP010",
-    "name": "0.12mm Detail (0.5 nozzle) @ZeroG",
+    "name": "0.12mm Detail (0.5 nozzle)",
     "from": "system",
     "instantiation": "true",
     "inherits": "fdm_process_ZeroG_common_0_5",

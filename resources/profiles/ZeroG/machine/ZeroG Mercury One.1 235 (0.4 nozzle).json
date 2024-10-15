@@ -15,7 +15,7 @@
     "0x230"
   ],
   "printable_height": "350",
-  "default_print_profile": "0.20mm Standard (0.4 nozzle) @ZeroG",
+  "default_print_profile": "0.20mm Standard (0.4 nozzle)",
   "default_filament_profile": [
     "ZeroG Generic PLA"
   ]

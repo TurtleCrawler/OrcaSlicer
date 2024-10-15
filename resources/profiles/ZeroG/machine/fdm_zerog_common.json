@@ -22,7 +22,7 @@
   "machine_max_jerk_z": ["1"],
   "machine_min_extruding_rate": ["0"],
   "machine_min_travel_rate": ["0"],
-  "max_layer_height": ["0.48"],
+  "max_layer_height": ["0.30"],
   "min_layer_height": ["0.08"],
   "printable_height": "400",
   "extruder_clearance_radius": "45",
@@ -33,9 +33,9 @@
   "retraction_minimum_travel": ["1"],
   "retract_before_wipe": ["70%"],
   "retract_when_changing_layer": ["1"],
-  "retraction_length": ["1.0"],
+  "retraction_length": ["0.5"],
   "retract_length_toolchange": ["2"],
-  "z_hop": ["0.4"],
+  "z_hop": ["0.2"],
   "retract_restart_extra": ["0"],
   "retract_restart_extra_toolchange": ["0"],
   "retraction_speed": ["40"],
@@ -56,5 +56,6 @@
   "scan_first_layer": "0",
   "nozzle_type": "brass",
   "auxiliary_fan": "0",
-  "support_multi_bed_types": "1"
+  "support_multi_bed_types": "1",
+  "printer_notes": "Please generate your START_PRINT macro at: http://docs.zerog.one/universal/klipper_macro_generator"
 }
