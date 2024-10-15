@@ -8,7 +8,7 @@
   "printer_model": "ZeroG Mercury One.1 370",
   "printer_variant": "0.5",
   "nozzle_diameter": ["0.5"],
-  "max_layer_height": ["0.4"],
+  "max_layer_height": ["0.38"],
   "min_layer_height": ["0.12"],
   "printable_area": [
     "0x0",

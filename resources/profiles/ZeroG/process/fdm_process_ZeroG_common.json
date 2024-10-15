@@ -138,6 +138,7 @@
   "wipe_speed": "80%",
   "xy_contour_compensation": "0",
   "xy_hole_compensation": "0",
+  "note": "",
   "compatible_printers": [
     "ZeroG M1.1 Hydra 255 (0.2 nozzle)",
     "ZeroG M1.1 Hydra 255 (0.25 nozzle)",

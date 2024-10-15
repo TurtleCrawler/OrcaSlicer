@@ -7,7 +7,7 @@
   "family": "ZeroG",
   "bed_model": "ZeroG-M1.1Hydra-255.stl",
   "bed_texture": "ZeroG_Logo.svg",
-  "hotend_model": "hotend.stl",
+  "hotend_model": "Nozzle.stl",
   "bed": "Textured PEI, Smooth PEI, Satin PEI",
   "default_materials": "ZeroG Generic ABS;ZeroG Generic PLA;ZeroG Generic PLA-CF;ZeroG Generic PETG;ZeroG Generic TPU;ZeroG Generic ASA;ZeroG Generic PC;ZeroG Generic PVA;ZeroG Generic PA;ZeroG Generic PA-CF"
 }

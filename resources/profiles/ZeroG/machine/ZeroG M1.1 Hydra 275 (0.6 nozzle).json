@@ -8,7 +8,7 @@
   "printer_model": "ZeroG M1.1 Hydra 275",
   "printer_variant": "0.6",
   "nozzle_diameter": ["0.6"],
-  "max_layer_height": ["0.48"],
+  "max_layer_height": ["0.45"],
   "min_layer_height": ["0.16"],
   "printable_area": [
     "0x0",

@@ -9,7 +9,7 @@
   "printer_variant": "0.5",
   "nozzle_diameter": ["0.5"],
   "nozzle_type": "undefine",
-  "max_layer_height": ["0.4"],
+  "max_layer_height": ["0.38"],
   "min_layer_height": ["0.12"],
   "printable_area": [
     "0x0",
