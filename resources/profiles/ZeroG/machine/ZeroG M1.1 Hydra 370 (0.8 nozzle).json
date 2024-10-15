@@ -17,7 +17,7 @@
     "0x365"
   ],
   "printable_height": "400",
-  "default_print_profile": "0.36mm Chunky (0.8 nozzle) @ZeroG",
+  "default_print_profile": "0.36mm Chunky (0.8 nozzle)",
   "default_filament_profile": [
     "ZeroG Generic PLA"
   ]

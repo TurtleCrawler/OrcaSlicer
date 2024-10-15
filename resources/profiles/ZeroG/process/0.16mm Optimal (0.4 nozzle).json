@@ -1,7 +1,7 @@
 {
 	"type": "process",
 	"setting_id": "GP014",
-	"name": "0.16mm Optimal (0.4 nozzle) @ZeroG",
+	"name": "0.16mm Optimal (0.4 nozzle)",
 	"from": "system",
 	"inherits": "fdm_process_ZeroG_common",
 	"instantiation": "true",
