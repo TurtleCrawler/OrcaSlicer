@@ -1,7 +1,7 @@
 {
   "type": "process",
   "setting_id": "GP066",
-  "name": "0.25mm Precurssor's Zeus (Warning!) @ZeroG",
+  "name": "0.25mm Precurssor's Zeus (Warning!)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_process_ZeroG_common",
