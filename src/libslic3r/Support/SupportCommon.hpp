@@ -12,8 +12,6 @@ namespace Slic3r {
 class PrintObject;
 class SupportLayer;
 
-namespace FFFSupport {
-
 // Remove bridges from support contact areas.
 // To be called if PrintObjectConfig::dont_support_bridges.
 void remove_bridges_from_contacts(
@@ -51,6 +49,11 @@ SupportGeneratorLayersPtr generate_raft_base(
 	const SupportGeneratorLayersPtr &base_interface_layers,
 	const SupportGeneratorLayersPtr &base_layers,
 	SupportGeneratorLayerStorage    &layer_storage);
+
+void tree_supports_generate_paths(ExtrusionEntitiesPtr &dst, const Polygons &polygons, const Flow &flow, const SupportParameters &support_params);
+
+void fill_expolygons_with_sheath_generate_paths(
+    ExtrusionEntitiesPtr &dst, const Polygons &polygons, Fill *filler, float density, ExtrusionRole role, const Flow &flow, const SupportParameters& support_params, bool with_sheath, bool no_sort);
 
 // returns sorted layers
 SupportGeneratorLayersPtr generate_support_layers(
@@ -149,8 +152,6 @@ int idx_lower_or_equal(const std::vector<T*> &vec, int idx, FN_LOWER_EQUAL fn_lo
 {
     return idx_lower_or_equal(vec.begin(), vec.end(), idx, fn_lower_equal);
 }
-
-} // namespace FFFSupport
 
 } // namespace Slic3r
 

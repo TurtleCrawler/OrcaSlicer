@@ -140,7 +140,7 @@ src/libslic3r/Zipper.cpp
 src/libslic3r/PrintObject.cpp
 src/libslic3r/PrintObjectSlice.cpp
 src/libslic3r/PlaceholderParser.cpp
-src/libslic3r/TreeSupport.cpp
+src/libslic3r/Support/TreeSupport.cpp
 src/libslic3r/Model.cpp
 src/libslic3r/Format/OBJ.cpp
 src/slic3r/GUI/CalibrationWizardPage.cpp
@@ -172,3 +172,4 @@ src/slic3r/Utils/SimplyPrint.cpp
 src/slic3r/Utils/Flashforge.cpp
 src/slic3r/GUI/Jobs/OAuthJob.cpp
 src/slic3r/GUI/BackgroundSlicingProcess.cpp
+src/slic3r/GUI/Gizmos/GLGizmoBrimEars.cpp
