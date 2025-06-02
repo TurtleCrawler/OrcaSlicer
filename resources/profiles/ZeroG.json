@@ -91,6 +91,10 @@
       "sub_path": "process/0.16mm Optimal (0.25 nozzle).json"
     },
     {
+      "name": "0.20mm Speed Benchy (0.4 nozzle)",
+      "sub_path": "process/0.20mm Speed Benchy (0.4 nozzle).json"
+    },
+    {
       "name": "0.20mm Speed-Quality (0.4 nozzle)",
       "sub_path": "process/0.20mm Speed-Quality (0.4 nozzle).json"
     },
@@ -243,6 +247,14 @@
     {
       "name": "ZeroG Generic PA-CF",
       "sub_path": "filament/ZeroG Generic PA-CF.json"
+    },
+    {
+      "name": "ZeroG Speed Benchy ABS",
+      "sub_path": "filament/ZeroG Speed Benchy ABS.json"
+    },
+    {
+      "name": "ZeroG Speed Benchy PLA",
+      "sub_path": "filament/ZeroG Speed Benchy PLA.json"
     }
   ],
   "machine_list": [
