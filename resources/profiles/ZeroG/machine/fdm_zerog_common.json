@@ -31,6 +31,7 @@
   "extruder_clearance_height_to_lid": "140",
   "printer_technology": "FFF",
   "printer_variant": "0.4",
+  "is_custom_defined": "0",
   "retraction_minimum_travel": ["1"],
   "retract_before_wipe": ["90%"],
   "retract_when_changing_layer": ["0"],
