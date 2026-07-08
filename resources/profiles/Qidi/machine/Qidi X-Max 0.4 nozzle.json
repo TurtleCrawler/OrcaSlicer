@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Qidi X-Max 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_qidi_common",
+	"from": "system",
+	"setting_id": "xn5DRJ8PySGduKjg",
+	"instantiation": "true",
 	"printer_model": "Qidi X-Max",
 	"default_print_profile": "0.20mm Standard @Qidi XMax",
 	"nozzle_diameter": [
@@ -76,7 +76,7 @@
 		"0.4"
 	],
 	"max_layer_height": [
-		"0"
+		"0.32"
 	],
 	"min_layer_height": [
 		"0.07"

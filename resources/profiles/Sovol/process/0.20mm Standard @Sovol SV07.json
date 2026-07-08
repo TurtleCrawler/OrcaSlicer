@@ -1,10 +1,10 @@
 {
-    "type": "process",
-    "setting_id": "GP004",
-    "name": "0.20mm Standard @Sovol SV07",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_process_common",
+	"type": "process",
+	"name": "0.20mm Standard @Sovol SV07",
+	"inherits": "fdm_process_common",
+	"from": "system",
+	"setting_id": "D6GOAXI1isGTNnfb",
+	"instantiation": "true",
 	"adaptive_layer_height": "1",
 	"reduce_crossing_wall": "0",
 	"layer_height": "0.2",
@@ -95,11 +95,11 @@
 	"gap_infill_speed": "150",
 	"sparse_infill_speed": "300",
 	"travel_speed": "350",
-	"enable_prime_tower": "0",
+	"enable_prime_tower": "1",
 	"wipe_tower_no_sparse_layers": "0",
 	"prime_tower_width": "60",
 	"xy_hole_compensation": "0",
-	"xy_contour_compensation": "0",	
+	"xy_contour_compensation": "0",
 	"seam_gap": "5%",
 	"outer_wall_acceleration": "5000",
 	"inner_wall_acceleration": "6000",
@@ -115,7 +115,7 @@
 	"gcode_label_objects": "0",
 	"exclude_object": "0",
 	"filename_format": "{printer_model}_{input_filename_base}_{filament_type[0]}_{layer_height}_{print_time}.gcode",
-    "compatible_printers": [
-        "Sovol SV07 0.4 nozzle"
-    ]
+	"compatible_printers": [
+		"Sovol SV07 0.4 nozzle"
+	]
 }

@@ -128,7 +128,8 @@ Vec3f sample_power_cosine_hemisphere(const Vec2f &samples, float power) {
 std::vector<float> raycast_visibility(const AABBTreeIndirect::Tree<3, float> &raycasting_tree,
                                       const indexed_triangle_set &triangles,
                                       const TriangleSetSamples &samples,
-                                      size_t negative_volumes_start_index) {
+                                      size_t negative_volumes_start_index,
+                                      SeamPosition seam_position = spAligned) {
   BOOST_LOG_TRIVIAL(debug)
       << "SeamPlacer: raycast visibility of " << samples.positions.size() << " samples over " << triangles.indices.size()
       << " triangles: end";
@@ -151,9 +152,9 @@ std::vector<float> raycast_visibility(const AABBTreeIndirect::Tree<3, float> &ra
   std::vector<float> result(samples.positions.size());
   tbb::parallel_for(tbb::blocked_range<size_t>(0, result.size()),
                     [&triangles, &precomputed_sample_directions, model_contains_negative_parts, negative_volumes_start_index,
-                     &raycasting_tree, &result, &samples](tbb::blocked_range<size_t> r) {
+                     &raycasting_tree, &result, &samples, seam_position](tbb::blocked_range<size_t> r) {
                       // Maintaining hits memory outside of the loop, so it does not have to be reallocated for each query.
-                      std::vector<igl::Hit> hits;
+                      std::vector<igl::Hit<float>> hits;
                       for (size_t s_idx = r.begin(); s_idx < r.end(); ++s_idx) {
                         result[s_idx] = 1.0f;
                         constexpr float decrease_step = 1.0f
@@ -161,6 +162,11 @@ std::vector<float> raycast_visibility(const AABBTreeIndirect::Tree<3, float> &ra
 
                         const Vec3f &center = samples.positions[s_idx];
                         const Vec3f &normal = samples.normals[s_idx];
+                        if (seam_position == spAlignedBack) {
+                            const float front_adjustment = std::clamp((normal.dot(Vec3f(0.0f, -1.0f, 0.0f)) + 1.2f) * 0.5f, 0.0f, 1.0f);
+                            result[s_idx] += front_adjustment;
+                        }
+
                         // apply the local direction via Frame struct - the local_dir is with respect to +Z being forward
                         Frame f;
                         f.set_from_z(normal);
@@ -168,7 +174,7 @@ std::vector<float> raycast_visibility(const AABBTreeIndirect::Tree<3, float> &ra
                         for (const auto &dir : precomputed_sample_directions) {
                           Vec3f final_ray_dir = (f.to_world(dir));
                           if (!model_contains_negative_parts) {
-                            igl::Hit hitpoint;
+                            igl::Hit<float> hitpoint;
                             // FIXME: This AABBTTreeIndirect query will not compile for float ray origin and
                             // direction.
                             Vec3d final_ray_dir_d = final_ray_dir.cast<double>();
@@ -617,7 +623,8 @@ std::pair<size_t, size_t> find_previous_and_next_perimeter_point(const std::vect
 
 // Computes all global model info - transforms object, performs raycasting
 void compute_global_occlusion(GlobalModelInfo &result, const PrintObject *po,
-                              std::function<void(void)> throw_if_canceled) {
+                              std::function<void(void)> throw_if_canceled,
+                              SeamPosition seam_position = spAligned) {
   BOOST_LOG_TRIVIAL(debug)
       << "SeamPlacer: gather occlusion meshes: start";
   auto obj_transform = po->trafo_centered();
@@ -629,7 +636,8 @@ void compute_global_occlusion(GlobalModelInfo &result, const PrintObject *po,
         || model_volume->type() == ModelVolumeType::NEGATIVE_VOLUME) {
       auto model_transformation = model_volume->get_matrix();
       indexed_triangle_set model_its = model_volume->mesh().its;
-      its_transform(model_its, model_transformation);
+      // ORCA: Mirrored transforms flip winding, keep normals outward
+      its_transform(model_its, model_transformation, true);
       if (model_volume->type() == ModelVolumeType::MODEL_PART) {
         its_merge(triangle_set, model_its);
       } else {
@@ -649,7 +657,8 @@ void compute_global_occlusion(GlobalModelInfo &result, const PrintObject *po,
 
   size_t negative_volumes_start_index = triangle_set.indices.size();
   its_merge(triangle_set, negative_volumes_set);
-  its_transform(triangle_set, obj_transform);
+  // ORCA: Mirroring flips normals, keep them outward for visibility sampling
+  its_transform(triangle_set, obj_transform, true);
   BOOST_LOG_TRIVIAL(debug)
       << "SeamPlacer: decimate: end";
 
@@ -692,7 +701,7 @@ void compute_global_occlusion(GlobalModelInfo &result, const PrintObject *po,
   BOOST_LOG_TRIVIAL(debug)
       << "SeamPlacer: build AABB tree: end";
   result.mesh_samples_visibility = raycast_visibility(raycasting_tree, triangle_set, result.mesh_samples,
-                                                      negative_volumes_start_index);
+                                                      negative_volumes_start_index, seam_position);
   throw_if_canceled();
 #ifdef DEBUG_FILES
   result.debug_export(triangle_set);
@@ -710,11 +719,13 @@ void gather_enforcers_blockers(GlobalModelInfo &result, const PrintObject *po) {
       auto model_transformation = obj_transform * mv->get_matrix();
 
       indexed_triangle_set enforcers = mv->seam_facets.get_facets(*mv, EnforcerBlockerType::ENFORCER);
-      its_transform(enforcers, model_transformation);
+      // ORCA: Keep normals outward when mirroring seam enforcers
+      its_transform(enforcers, model_transformation, true);
       its_merge(result.enforcers, enforcers);
 
       indexed_triangle_set blockers = mv->seam_facets.get_facets(*mv, EnforcerBlockerType::BLOCKER);
-      its_transform(blockers, model_transformation);
+      // ORCA: Keep normals outward when mirroring seam blockers
+      its_transform(blockers, model_transformation, true);
       its_merge(result.blockers, blockers);
     }
   }
@@ -741,7 +752,7 @@ struct SeamComparator {
   // should return if a is better seamCandidate than b
   bool is_first_better(const SeamCandidate &a, const SeamCandidate &b, const Vec2f &preffered_location = Vec2f { 0.0f,
                                                                                                                0.0f }) const {
-    if (setup == SeamPosition::spAligned && a.central_enforcer != b.central_enforcer) {
+    if ((setup == SeamPosition::spAligned || setup == SeamPosition::spAlignedBack) && a.central_enforcer != b.central_enforcer) {
       return a.central_enforcer;
     }
 
@@ -790,7 +801,7 @@ struct SeamComparator {
   // Also used by the random seam generator.
   bool is_first_not_much_worse(const SeamCandidate &a, const SeamCandidate &b) const {
     // Blockers/Enforcers discrimination, top priority
-    if (setup == SeamPosition::spAligned && a.central_enforcer != b.central_enforcer) {
+    if ((setup == SeamPosition::spAligned || setup == SeamPosition::spAlignedBack) && a.central_enforcer != b.central_enforcer) {
       // Prefer centers of enforcers.
       return a.central_enforcer;
     }
@@ -1426,8 +1437,8 @@ void SeamPlacer::init(const Print &print, std::function<void(void)> throw_if_can
       GlobalModelInfo global_model_info { };
       gather_enforcers_blockers(global_model_info, po);
       throw_if_canceled_func();
-      if (configured_seam_preference == spAligned || configured_seam_preference == spNearest) {
-        compute_global_occlusion(global_model_info, po, throw_if_canceled_func);
+      if (configured_seam_preference == spAligned || configured_seam_preference == spNearest || configured_seam_preference == spAlignedBack) {
+        compute_global_occlusion(global_model_info, po, throw_if_canceled_func, configured_seam_preference);
       }
       throw_if_canceled_func();
       BOOST_LOG_TRIVIAL(debug)
@@ -1436,7 +1447,7 @@ void SeamPlacer::init(const Print &print, std::function<void(void)> throw_if_can
       BOOST_LOG_TRIVIAL(debug)
           << "SeamPlacer: gather_seam_candidates: end";
       throw_if_canceled_func();
-      if (configured_seam_preference == spAligned || configured_seam_preference == spNearest) {
+      if (configured_seam_preference == spAligned || configured_seam_preference == spNearest || configured_seam_preference == spAlignedBack) {
         BOOST_LOG_TRIVIAL(debug)
             << "SeamPlacer: calculate_candidates_visibility : start";
         calculate_candidates_visibility(po, global_model_info);
@@ -1472,7 +1483,7 @@ void SeamPlacer::init(const Print &print, std::function<void(void)> throw_if_can
           << "SeamPlacer: pick_seam_point : end";
     }
     throw_if_canceled_func();
-    if (configured_seam_preference == spAligned || configured_seam_preference == spRear) {
+    if (configured_seam_preference == spAligned || configured_seam_preference == spRear || configured_seam_preference == spAlignedBack) {
       BOOST_LOG_TRIVIAL(debug)
           << "SeamPlacer: align_seam_points : start";
       align_seam_points(po, comparator);
@@ -1503,7 +1514,7 @@ void SeamPlacer::place_seam(const Layer *layer, ExtrusionLoop &loop,
       current.path_idx = next_idx_modulo(current.path_idx, loop.paths.size());
       current.segment_idx = 0;
     }
-    current.foot_pt = loop.paths[current.path_idx].polyline.points[current.segment_idx];
+    current.foot_pt = loop.paths[current.path_idx].polyline.points[current.segment_idx].to_point();
     return current;
   };
 
@@ -1516,7 +1527,7 @@ void SeamPlacer::place_seam(const Layer *layer, ExtrusionLoop &loop,
   size_t closest_perimeter_point_index = 0;
   { // local space for the closest_perimeter_point_index
     Perimeter *closest_perimeter = nullptr;
-    ExtrusionLoop::ClosestPathPoint closest_point{0,0,loop.paths[0].polyline.points[0]};
+    ExtrusionLoop::ClosestPathPoint closest_point{0, 0, loop.paths[0].polyline.points[0].to_point()};
     size_t points_count = std::accumulate(loop.paths.begin(), loop.paths.end(), 0, [](size_t acc,const ExtrusionPath& p) {
       return acc + p.polyline.points.size();
     });

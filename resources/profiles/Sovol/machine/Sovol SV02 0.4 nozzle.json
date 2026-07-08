@@ -1,24 +1,24 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Sovol SV02 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_machine_common",
+	"from": "system",
+	"setting_id": "e07wzF8K9ePoSPUD",
+	"instantiation": "true",
 	"printer_model": "Sovol SV02",
 	"default_print_profile": "0.20mm Standard @Sovol SV02",
 	"nozzle_diameter": [
 		"0.4",
 		"0.4"
 	],
-    "extruder_colour": [
-        "#FCE94F",
+	"extruder_colour": [
+		"#FCE94F",
 		"#FCE94F"
-    ],
-    "extruder_offset": [
-        "0x0",
+	],
+	"extruder_offset": [
+		"0x0",
 		"0x0"
-    ],
+	],
 	"printable_area": [
 		"0x0",
 		"280x0",
@@ -84,6 +84,10 @@
 		"0.4",
 		"0.4"
 	],
+	"machine_max_junction_deviation": [
+		"0.06",
+		"0"
+	],
 	"max_layer_height": [
 		"0.32",
 		"0.32"
@@ -109,26 +113,26 @@
 		"1",
 		"1"
 	],
-    "retract_when_changing_layer": [
-        "1",
+	"retract_when_changing_layer": [
+		"1",
 		"1"
-    ],
-    "retract_restart_extra": [
-        "0",
+	],
+	"retract_restart_extra": [
+		"0",
 		"0"
-    ],
-    "retract_restart_extra_toolchange": [
-        "0",
+	],
+	"retract_restart_extra_toolchange": [
+		"0",
 		"0"
-    ],
+	],
 	"deretraction_speed": [
 		"60",
 		"60"
 	],
-    "wipe": [
-        "1",
+	"wipe": [
+		"1",
 		"1"
-    ],
+	],
 	"single_extruder_multi_material": "1",
 	"change_filament_gcode": "M600",
 	"machine_pause_gcode": "M0",

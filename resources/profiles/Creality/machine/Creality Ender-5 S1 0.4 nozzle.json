@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Creality Ender-5 S1 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_creality_common",
+	"from": "system",
+	"setting_id": "1wZtkdPmvwYS53L6",
+	"instantiation": "true",
 	"printer_model": "Creality Ender-5 S1",
 	"default_print_profile": "0.20mm Standard @Creality Ender5S1",
 	"nozzle_diameter": [
@@ -74,6 +74,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.013",
+		"0"
 	],
 	"max_layer_height": [
 		"0.32"

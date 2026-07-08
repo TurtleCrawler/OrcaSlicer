@@ -1,12 +1,16 @@
 {
 	"type": "filament",
-	"setting_id": "GFSA04_CREALITY_00",
 	"name": "Creality Generic ABS @Ender-3V3-all",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "Creality Generic ABS",
-	"filament_max_volumetric_speed": ["9"],
-	"slow_down_layer_time": ["5"],
+	"from": "system",
+	"setting_id": "Jvnq628y3IlGGHK6",
+	"instantiation": "true",
+	"filament_max_volumetric_speed": [
+		"9"
+	],
+	"slow_down_layer_time": [
+		"5"
+	],
 	"compatible_printers": [
 		"Creality Ender-3 V3 SE 0.2 nozzle",
 		"Creality Ender-3 V3 SE 0.4 nozzle",

@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Anycubic i3 Mega S 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_machine_common",
+	"from": "system",
+	"setting_id": "5dhgi6AGtzKSrNiD",
+	"instantiation": "true",
 	"printer_model": "Anycubic i3 Mega S",
 	"default_print_profile": "0.20mm Standard @Anycubic i3MegaS",
 	"nozzle_diameter": [
@@ -19,10 +19,10 @@
 	"printable_height": "205",
 	"nozzle_type": "undefine",
 	"auxiliary_fan": "0",
-    "machine_max_acceleration_e": [
-        "10000",
-        "10000"
-    ],
+	"machine_max_acceleration_e": [
+		"10000",
+		"10000"
+	],
 	"machine_max_acceleration_extruding": [
 		"1250",
 		"1250"
@@ -78,6 +78,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.013",
+		"0"
 	],
 	"max_layer_height": [
 		"0.36"

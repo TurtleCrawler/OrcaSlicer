@@ -37,6 +37,9 @@ enum class EnforcerBlockerType : int8_t {
     ExtruderMax = Extruder16
 };
 
+// Type alias for the state mapping array to improve code readability
+using EnforcerBlockerStateMap = std::array<EnforcerBlockerType, (size_t)EnforcerBlockerType::ExtruderMax + 1>;
+
 // Following class holds information about selected triangles. It also has power
 // to recursively subdivide the triangles and make the selection finer.
 class TriangleSelector
@@ -305,7 +308,8 @@ public:
                       EnforcerBlockerType       new_state,                     // enforcer or blocker?
                       const Transform3d        &trafo_no_translate,            // matrix to get from mesh to world without translation
                       bool                      triangle_splitting,            // If triangles will be split base on the cursor or not
-                      float                     highlight_by_angle_deg = 0.f); // The maximal angle of overhang. If it is set to a non-zero value, it is possible to paint only the triangles of overhang defined by this angle in degrees.
+                      float                     highlight_by_angle_deg = 0.f,  // The maximal angle of overhang. If it is set to a non-zero value, it is possible to paint only the triangles of overhang defined by this angle in degrees.
+                      bool                      select_partially = false);     // Select a triangle if it's partially in the cursor but too small to be subdivided
 
     void seed_fill_select_triangles(const Vec3f        &hit,                          // point where to start
                                     int                 facet_start,                  // facet of the original mesh (unsplit) that the hit point belongs to
@@ -344,6 +348,10 @@ public:
     // Remove all unnecessary data.
     void garbage_collect();
 
+    // Orca: remap the state of triangles according to the state_map
+    void remap_triangle_state(const EnforcerBlockerStateMap& state_map);
+
+
     // Store the division trees in compact form (a long stream of bits for each triangle of the original mesh).
     // First vector contains pairs of (triangle index, first bit in the second vector).
     TriangleSplittingData serialize() const;
@@ -351,7 +359,9 @@ public:
     // Load serialized data. Assumes that correct mesh is loaded.
     void deserialize(const TriangleSplittingData& data,
                      bool                         needs_reset = true,
-                     EnforcerBlockerType          max_ebt     = EnforcerBlockerType::ExtruderMax);
+                     EnforcerBlockerType          max_ebt     = EnforcerBlockerType::ExtruderMax,
+                     EnforcerBlockerType          to_delete_filament = EnforcerBlockerType::NONE,
+                     EnforcerBlockerType          replace_filament = EnforcerBlockerType::NONE);
 
     // Extract all used facet states from the given TriangleSplittingData.
     static std::vector<EnforcerBlockerType> extract_used_facet_states(const TriangleSplittingData &data);
@@ -362,6 +372,25 @@ public:
     // For all triangles selected by seed fill, set new EnforcerBlockerType and remove flag indicating that triangle was selected by seed fill.
     // The operation may merge split triangles if they are being assigned the same color.
     void seed_fill_apply_on_triangles(EnforcerBlockerType new_state);
+
+    // Saved painting data for remapping after mesh change.
+    struct SavedPainting {
+        TriangleMesh          mesh;  // Original mesh
+        TriangleSplittingData supported;
+        TriangleSplittingData seam;
+        TriangleSplittingData mmu;
+        TriangleSplittingData fuzzy;
+    };
+
+    // Remap painting data from source mesh to target mesh using spatial mapping.
+    // `target_transform` should transform the target mesh into source's coordinate space.
+    // If `existing_painting` is present, the result will be a combine of `existing_painting` and remapped `source_painting`.
+    static TriangleSplittingData remap_painting(
+        const indexed_triangle_set& source_its,
+        const TriangleSplittingData& source_painting,
+        const indexed_triangle_set& target_its,
+        const Transform3d& target_transform,
+        const std::optional<std::reference_wrapper<const TriangleSplittingData>>& existing_painting);
 
 protected:
     // Triangle and info about how it's split.
@@ -416,10 +445,17 @@ protected:
         // or index of a vertex shared by the two split edges (for number_of_splits == 2).
         // For number_of_splits == 3, special_side_idx is always zero.
         char special_side_idx { 0 };
-        EnforcerBlockerType state;
         bool m_selected_by_seed_fill : 1;
         // Is this triangle valid or marked to be removed?
         bool m_valid : 1;
+
+        // Orca:
+        // IMPORTANT: `state` is intentionally placed after all other small members
+        // to prevent compilers from packing it in a way that would create
+        // data races during parallel processing. A write to `state` could
+        // otherwise become a non-atomic read-modify-write on a memory word
+        // that also contains other (bit-field) members, causing race conditions.
+        EnforcerBlockerType state;
     };
 
     struct Vertex {
@@ -461,8 +497,8 @@ protected:
 
     // Private functions:
 private:
-    bool select_triangle(int facet_idx, EnforcerBlockerType type, bool triangle_splitting);
-    bool select_triangle_recursive(int facet_idx, const Vec3i32 &neighbors, EnforcerBlockerType type, bool triangle_splitting);
+    bool select_triangle(int facet_idx, EnforcerBlockerType type, bool triangle_splitting, bool select_partially);
+    bool select_triangle_recursive(int facet_idx, const Vec3i32 &neighbors, EnforcerBlockerType type, bool triangle_splitting, bool select_partially);
     void undivide_triangle(int facet_idx);
     void split_triangle(int facet_idx, const Vec3i32 &neighbors);
     void remove_useless_children(int facet_idx); // No hidden meaning. Triangles are meant.
@@ -505,10 +541,9 @@ private:
 
     int m_free_triangles_head { -1 };
     int m_free_vertices_head { -1 };
+
+    friend class TriangleCursor;
 };
-
-
-
 
 } // namespace Slic3r
 

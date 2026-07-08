@@ -1,15 +1,17 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Creality Ender-3 Pro 0.2 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_creality_common",
+	"from": "system",
+	"setting_id": "J3vE732ssoOVnlfr",
+	"instantiation": "true",
 	"printer_model": "Creality Ender-3 Pro",
 	"printer_variant": "0.2",
 	"printer_structure": "i3",
 	"default_print_profile": "0.20mm Standard @Creality Ender3 Pro 0.2",
-	"thumbnails": [""],
+	"thumbnails": [
+		""
+	],
 	"nozzle_diameter": [
 		"0.2"
 	],
@@ -79,6 +81,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.08",
+		"0"
 	],
 	"max_layer_height": [
 		"0.16"

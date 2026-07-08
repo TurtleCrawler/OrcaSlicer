@@ -3,15 +3,13 @@ add_executable(${_TEST_NAME}_tests
     ${_TEST_NAME}_tests_main.cpp
     )
 
-target_link_libraries(${_TEST_NAME}_tests test_common libslic3r_gui libslic3r)
 if (MSVC)
     target_link_libraries(${_TEST_NAME}_tests Setupapi.lib)
 endif ()
+
+target_link_libraries(${_TEST_NAME}_tests test_common libslic3r_gui libslic3r Catch2::Catch2WithMain)
 set_property(TARGET ${_TEST_NAME}_tests PROPERTY FOLDER "tests")
 
-if (WIN32)
-    bambuslicer_copy_dlls(${_TEST_NAME}_tests)
-endif()
+orcaslicer_copy_test_dlls()
 
-# catch_discover_tests(${_TEST_NAME}_tests TEST_PREFIX "${_TEST_NAME}: ")
-add_test(${_TEST_NAME}_tests ${_TEST_NAME}_tests "${CATCH_EXTRA_ARGS} exclude:[NotWorking]")
+orcaslicer_discover_tests(${_TEST_NAME}_tests)

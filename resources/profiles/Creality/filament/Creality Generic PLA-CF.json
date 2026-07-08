@@ -1,25 +1,26 @@
 {
-    "type": "filament",
-    "filament_id": "GFL98",
-    "name": "Creality Generic PLA-CF",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_filament_pla",
-    "filament_flow_ratio": [
-        "0.95"
-    ],
-    "filament_type": [
-        "PLA-CF"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "slow_down_layer_time": [
-        "7"
-    ],
-    "filament_cost": [
-        "30"
-    ],
+	"type": "filament",
+	"name": "Creality Generic PLA-CF",
+	"inherits": "fdm_filament_pla",
+	"from": "system",
+	"setting_id": "DCCWPQGMsvDOucwx",
+	"filament_id": "GFL98",
+	"instantiation": "true",
+	"filament_flow_ratio": [
+		"0.95"
+	],
+	"filament_type": [
+		"PLA-CF"
+	],
+	"filament_max_volumetric_speed": [
+		"12"
+	],
+	"slow_down_layer_time": [
+		"7"
+	],
+	"filament_cost": [
+		"30"
+	],
 	"compatible_printers": [
 		"Creality CR-10 V2 0.4 nozzle",
 		"Creality CR-10 V3 0.4 nozzle",

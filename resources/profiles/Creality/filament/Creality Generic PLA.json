@@ -1,14 +1,20 @@
 {
 	"type": "filament",
-	"filament_id": "GFL99",
-	"setting_id": "GFSA04",
 	"name": "Creality Generic PLA",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_filament_pla",
-	"filament_flow_ratio": ["0.98"],
-	"filament_max_volumetric_speed": ["12"],
-	"slow_down_layer_time": ["8"],
+	"from": "system",
+	"setting_id": "rUYYpB3GkiNCVyfY",
+	"filament_id": "GFL99",
+	"instantiation": "true",
+	"filament_flow_ratio": [
+		"0.98"
+	],
+	"filament_max_volumetric_speed": [
+		"12"
+	],
+	"slow_down_layer_time": [
+		"8"
+	],
 	"compatible_printers": [
 		"Creality CR-10 V2 0.4 nozzle",
 		"Creality CR-10 V3 0.4 nozzle",

@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Sovol SV05 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_machine_common",
+	"from": "system",
+	"setting_id": "ljpHARdxa4iYSUPI",
+	"instantiation": "true",
 	"printer_model": "Sovol SV05",
 	"default_print_profile": "0.20mm Standard @Sovol SV05",
 	"nozzle_diameter": [
@@ -74,6 +74,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.013",
+		"0"
 	],
 	"max_layer_height": [
 		"0.32"

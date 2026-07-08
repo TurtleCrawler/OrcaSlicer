@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <catch2/catch.hpp>
+#include <random>
+#include <catch2/catch_all.hpp>
 
 #include "libslic3r/TriangleMesh.hpp"
 
@@ -110,11 +111,11 @@ static float triangle_area(const Vec3f &v0, const Vec3f &v1, const Vec3f &v2)
     return ab.cross(ac).norm() / 2.f;
 }
 
-static float triangle_area(const Vec3crd &triangle_inices, const std::vector<Vec3f> &vertices)
+static float triangle_area(const stl_triangle_vertex_indices &triangle_indices, const std::vector<Vec3f> &vertices)
 {
-    return triangle_area(vertices[triangle_inices[0]],
-                         vertices[triangle_inices[1]],
-                         vertices[triangle_inices[2]]);
+    return triangle_area(vertices[triangle_indices[0]],
+                         vertices[triangle_indices[1]],
+                         vertices[triangle_indices[2]]);
 }
 
 #if 0
@@ -224,7 +225,7 @@ TEST_CASE("Reduce one edge by Quadric Edge Collapse", "[its]")
                     Vec3f(0.9f, .1f, -.1f)};
     its.indices  = {Vec3i32(1, 0, 3), Vec3i32(2, 1, 3), Vec3i32(0, 2, 3),
                    Vec3i32(0, 1, 4), Vec3i32(1, 2, 4), Vec3i32(2, 0, 4)};
-    // edge to remove is between vertices 2 and 4 on trinagles 4 and 5
+    // edge to remove is between vertices 2 and 4 on triangles 4 and 5
 
     indexed_triangle_set its_ = its; // copy
     // its_write_obj(its, "tetrhedron_in.obj");

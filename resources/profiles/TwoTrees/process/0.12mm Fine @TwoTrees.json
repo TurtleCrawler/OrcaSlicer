@@ -1,11 +1,11 @@
 {
-    "type": "process",
-    "setting_id": "GP002",
-    "name": "0.12mm Fine @TwoTrees",
-    "from": "system",
-    "instantiation": "true",
-    "inherits": "fdm_process_common",
-    "layer_height": "0.12",
-    "bottom_shell_layers": "5",
-    "top_shell_layers": "6"
+	"type": "process",
+	"name": "0.12mm Fine @TwoTrees",
+	"inherits": "fdm_process_common",
+	"from": "system",
+	"setting_id": "sjHTI0M9xPisplrH",
+	"instantiation": "true",
+	"layer_height": "0.12",
+	"bottom_shell_layers": "5",
+	"top_shell_layers": "6"
 }

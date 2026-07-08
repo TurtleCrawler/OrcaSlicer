@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Creality Ender-3 S1 Pro 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_creality_common",
+	"from": "system",
+	"setting_id": "QW6vWxP2VA6kipYu",
+	"instantiation": "true",
 	"printer_model": "Creality Ender-3 S1 Pro",
 	"printer_structure": "i3",
 	"default_print_profile": "0.20mm Standard @Creality Ender3S1Pro",
@@ -75,6 +75,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.013",
+		"0"
 	],
 	"max_layer_height": [
 		"0.36"

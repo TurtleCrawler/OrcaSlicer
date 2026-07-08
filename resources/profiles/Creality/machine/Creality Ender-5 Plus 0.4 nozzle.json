@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Creality Ender-5 Plus 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_creality_common",
+	"from": "system",
+	"setting_id": "qAbfSQYMb1zHtNMj",
+	"instantiation": "true",
 	"printer_model": "Creality Ender-5 Plus",
 	"default_print_profile": "0.20mm Standard @Creality Ender5Plus",
 	"nozzle_diameter": [
@@ -19,9 +19,9 @@
 	"printable_height": "400",
 	"nozzle_type": "undefine",
 	"auxiliary_fan": "0",
-    "machine_max_acceleration_e": [
-        "1000"
-    ],
+	"machine_max_acceleration_e": [
+		"1000"
+	],
 	"machine_max_acceleration_extruding": [
 		"500",
 		"500"
@@ -77,6 +77,10 @@
 	"machine_max_jerk_z": [
 		"0.4",
 		"0.4"
+	],
+	"machine_max_junction_deviation": [
+		"0.15",
+		"0"
 	],
 	"max_layer_height": [
 		"0.32"

@@ -16,7 +16,7 @@
 
 #include <boost/log/trivial.hpp>
 
-#include <GL/glew.h>
+#include <glad/gl.h>
 
 #ifndef IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_DEFINE_MATH_OPERATORS
@@ -272,13 +272,13 @@ bool GLGizmoText::on_init()
     m_desc["thickness"]     = _L("Thickness");
     m_desc["text_gap"]      = _L("Text Gap");
     m_desc["angle"]         = _L("Angle");
-    m_desc["embeded_depth"] = _L("Embedded\ndepth");
+    m_desc["embeded_depth"] = _L("Embedded depth");
     m_desc["input_text"]    = _L("Input text");
 
     m_desc["surface"]         = _L("Surface");
     m_desc["horizontal_text"] = _L("Horizontal text");
 
-    m_desc["rotate_text_caption"] = _L("Shift + Mouse move up or down");
+    m_desc["rotate_text_caption"] = _L("Shift+") + _L("Mouse move up or down");
     m_desc["rotate_text"]         = _L("Rotate text");
 
     return true;

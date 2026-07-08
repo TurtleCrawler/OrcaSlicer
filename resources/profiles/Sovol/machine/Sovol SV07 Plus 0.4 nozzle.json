@@ -1,10 +1,10 @@
 {
 	"type": "machine",
-	"setting_id": "GM001",
 	"name": "Sovol SV07 Plus 0.4 nozzle",
-	"from": "system",
-	"instantiation": "true",
 	"inherits": "fdm_machine_common",
+	"from": "system",
+	"setting_id": "RBpom11PPlgYlQl2",
+	"instantiation": "true",
 	"printer_model": "Sovol SV07 Plus",
 	"default_print_profile": "0.20mm Standard @Sovol SV07 Plus",
 	"nozzle_diameter": [
@@ -19,71 +19,71 @@
 	"printable_height": "350",
 	"nozzle_type": "undefine",
 	"auxiliary_fan": "0",
-	  "machine_max_acceleration_e": [
-        "20000"
-    ],
-    "machine_max_acceleration_extruding": [
-        "4000",
-        "1250"
-    ],
-    "machine_max_acceleration_retracting": [
-        "4000",
-        "1250"
-    ],
-    "machine_max_acceleration_travel": [
-        "1500",
-        "1250"
-    ],
-    "machine_max_acceleration_x": [
-        "8000",
-        "960"
-    ],
-    "machine_max_acceleration_y": [
-        "8000",
-        "960"
-    ],
-    "machine_max_acceleration_z": [
-        "400",
-        "200"
-    ],
-    "machine_max_jerk_e": [
-        "15",
-        "4.5"
-    ],
-    "machine_max_jerk_x": [
-        "27",
-        "8"
-    ],
-    "machine_max_jerk_y": [
-        "27",
-        "8"
-    ],
-    "machine_max_jerk_z": [
-        "3.6",
-        "0.4"
-    ],
-    "machine_max_speed_e": [
-        "500",
-        "120"
-    ],
-    "machine_max_speed_x": [
-        "500",
-        "100"
-    ],
-    "machine_max_speed_y": [
-        "500",
-        "100"
-    ],
-    "machine_max_speed_z": [
-        "500",
-        "12"
-    ],
-    "machine_min_extruding_rate": [
-        "0"
-    ],
-    "machine_min_travel_rate": [
-        "0"
-    ],
+	"machine_max_acceleration_e": [
+		"20000"
+	],
+	"machine_max_acceleration_extruding": [
+		"4000",
+		"1250"
+	],
+	"machine_max_acceleration_retracting": [
+		"4000",
+		"1250"
+	],
+	"machine_max_acceleration_travel": [
+		"1500",
+		"1250"
+	],
+	"machine_max_acceleration_x": [
+		"8000",
+		"960"
+	],
+	"machine_max_acceleration_y": [
+		"8000",
+		"960"
+	],
+	"machine_max_acceleration_z": [
+		"400",
+		"200"
+	],
+	"machine_max_jerk_e": [
+		"15",
+		"4.5"
+	],
+	"machine_max_jerk_x": [
+		"27",
+		"8"
+	],
+	"machine_max_jerk_y": [
+		"27",
+		"8"
+	],
+	"machine_max_jerk_z": [
+		"3.6",
+		"0.4"
+	],
+	"machine_max_speed_e": [
+		"500",
+		"120"
+	],
+	"machine_max_speed_x": [
+		"500",
+		"100"
+	],
+	"machine_max_speed_y": [
+		"500",
+		"100"
+	],
+	"machine_max_speed_z": [
+		"500",
+		"12"
+	],
+	"machine_min_extruding_rate": [
+		"0"
+	],
+	"machine_min_travel_rate": [
+		"0"
+	],
 	"max_layer_height": [
 		"0.25"
 	],
@@ -94,8 +94,8 @@
 	"use_relative_e_distances": "0",
 	"gcode_flavor": "klipper",
 	"fan_kickstart": "0.2",
-    "fan_speedup_overhangs": "0",
-    "fan_speedup_time": "0.5",
+	"fan_speedup_overhangs": "0",
+	"fan_speedup_time": "0.5",
 	"retraction_minimum_travel": [
 		"0.5"
 	],

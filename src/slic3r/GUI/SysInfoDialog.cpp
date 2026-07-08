@@ -14,8 +14,8 @@
 #include "GUI_App.hpp"
 #include "MainFrame.hpp"
 #include "wxExtensions.hpp"
-#include "../libslic3r/BlacklistedLibraryCheck.hpp"
-#include "../libslic3r/Color.hpp"
+#include "libslic3r/BlacklistedLibraryCheck.hpp"
+#include "libslic3r/Color.hpp"
 #include "format.hpp"
 
 #ifdef _WIN32
@@ -109,7 +109,7 @@ SysInfoDialog::SysInfoDialog()
         title_font.SetFamily(wxFONTFAMILY_ROMAN);
         title_font.SetPointSize(22);
         title->SetFont(title_font);
-        vsizer->Add(title, 0, wxEXPAND | wxALIGN_LEFT | wxTOP, wxGetApp().em_unit()/*50*/);
+        vsizer->Add(title, 0, wxEXPAND | wxTOP, wxGetApp().em_unit()/*50*/);
     }
 
     // main_info_text
